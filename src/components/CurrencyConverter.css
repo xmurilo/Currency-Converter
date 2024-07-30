@@ -1,0 +1,51 @@
+body {
+  background-color: #000;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.converter {
+  margin: 12rem auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 18px;
+  padding: 12px 18px;
+  width: 50%;
+  background-color: #f8f9fa;
+  border: 2px solid #a2a2a2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.converter h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.converter input,
+.converter select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #a2a2a2;
+  font-size: 1rem;
+  outline: none;
+}
+
+.converter input {
+  margin-bottom: 30px;
+}
+
+.converter span {
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.converter p {
+  font-size: 1.2rem;
+}
