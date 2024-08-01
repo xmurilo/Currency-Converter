@@ -11,11 +11,10 @@ const CurrencyConverter = () => {
   const [convertedAmount, setConvertedAmount] = useState<number | null>(null);
 
   useEffect(() => {
-    axios
-      .get(` https://v6.exchangerate-api.com/v6/684c450aab51aa5f5b41048d/latest/USD`)
-      .then(res => {
-        setRates(res.data.conversion_rates);
-      });
+    const apiKey = import.meta.env.VITE_API_KEY || "";
+    axios.get(` https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`).then(res => {
+      setRates(res.data.conversion_rates);
+    });
   }, []);
 
   useEffect(() => {
